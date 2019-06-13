@@ -1,3 +1,0 @@
-#!/bin/sh
-# replace 3rd line with command to run
-mvn fmt:format

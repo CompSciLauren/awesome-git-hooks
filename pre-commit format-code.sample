@@ -1,0 +1,4 @@
+#!/bin/sh
+# Formats code using mvn fmt:format command. Any staged files that are modified by this command will be re-added before the commit is complete.
+mvn fmt:format
+git diff --name-only --cached | xargs -l git add
