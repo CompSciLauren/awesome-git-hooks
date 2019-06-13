@@ -1,4 +1,9 @@
 #!/bin/sh
-# Formats code using mvn fmt:format command. Any staged files that are modified by this command will be re-added before the commit is complete.
+#
+# Formats code using mvn fmt:format command.
+# Any staged files that are modified by this command will be re-added to the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
 mvn fmt:format
 git diff --name-only --cached | xargs -l git add

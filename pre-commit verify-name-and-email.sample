@@ -1,6 +1,12 @@
 #!/bin/sh
-# Make sure user.name is set properly
+#
+# Verifies user.name and user.email are set to correct name and email address.
+#
+# To enable this hook, rename this file to "pre-commit".
+
 username=$(git config user.name)
+
+# Make sure user.name is set properly
 if [ "$username" != "Lauren Stephenson" ]
 then
     cat <<\EOF
