@@ -4,9 +4,8 @@
 #
 # To enable this hook, rename this file to "pre-commit".
 
-username=$(git config user.name)
-
 # Make sure user.name is set properly
+username=$(git config user.name)
 if [ "$username" != "Lauren Stephenson" ]
 then
     cat <<\EOF
