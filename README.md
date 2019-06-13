@@ -1,14 +1,22 @@
 # git-hooks
 How to use git hooks - resources and examples.
 
-[Video: Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
+## What are git hooks?
+> "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
-[Article: Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
+## Video
+[Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
 
-[Article: Easy git hooks with husky](https://www.vojtechruzicka.com/githooks-husky/)
+## Articles
+[An Introduction to Git Hooks](https://www.sitepoint.com/introduction-git-hooks/)
 
-[Article: Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked "Git Hooked")
+[Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
 
-[Article: Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
+[Easy git hooks with husky](https://www.vojtechruzicka.com/githooks-husky/)
 
-[Book: Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+[Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked "Git Hooked")
+
+[Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
+
+## Book
+[Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
