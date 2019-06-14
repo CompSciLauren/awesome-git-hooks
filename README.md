@@ -9,11 +9,14 @@ This repo contains the following samples:
 
 **_pre-commit samples_**
 - **format-code:** Run command to format code and re-add any files modified after formatting
-- **search-term:** Search code for a term, fail if found
-- **verify-name-and-email:** Check name and email is correct, fail if found
+- **search-term:** Fail commit if a specific term is found in the code
+- **verify-name-and-email:** Fail commit if user.name or user.email is incorrect
 
 **_miscellaneous samples_**
 - **default samples:** samples that are automatically generated in .git/hooks
+
+## Helpful Hints
+You can bypass pre-commit hooks by adding `--no-verify` to end of `git commit` command
 
 ## Resources
 Below are a variety of helpful resources on how git hooks work.
