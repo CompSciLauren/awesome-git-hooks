@@ -4,10 +4,20 @@ How to use git hooks - resources and examples.
 ## What are git hooks?
 > "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
-## Video
+## Overview of Samples
+This repo contains the following pre-commit samples:
+- **format-code:** Run command to format code and re-add any files modified after formatting
+- **search-term:** Search code for a term, fail if found
+- **verify-name-and-email:** Check name and email is correct, fail if found
+- **default samples:** samples that are automatically generated in .git/hooks
+
+## Resources
+Below are a variety of helpful resources on how git hooks work.
+
+### Video
 [Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
 
-## Articles
+### Articles
 [An Introduction to Git Hooks](https://www.sitepoint.com/introduction-git-hooks/)
 
 [Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
@@ -20,5 +30,5 @@ How to use git hooks - resources and examples.
 
 [Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
 
-## Book
+### Book
 [Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
