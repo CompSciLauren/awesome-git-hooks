@@ -16,6 +16,8 @@ How to use git hooks - resources and examples.
 
 [Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked "Git Hooked")
 
+[Automate Your Workflow with Git Hooks](https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c)
+
 [Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
 
 ## Book
