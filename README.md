@@ -5,10 +5,14 @@ How to use git hooks - resources and examples.
 > "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
 ## Overview of Samples
-This repo contains the following pre-commit samples:
+This repo contains the following samples:
+
+**_pre-commit samples_**
 - **format-code:** Run command to format code and re-add any files modified after formatting
 - **search-term:** Search code for a term, fail if found
 - **verify-name-and-email:** Check name and email is correct, fail if found
+
+**_miscellaneous samples_**
 - **default samples:** samples that are automatically generated in .git/hooks
 
 ## Resources
