@@ -2,6 +2,9 @@
 #
 # Verifies user.name and user.email are set to correct name and email address.
 #
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it stops the commit.
+#
 # To enable this hook, rename this file to "pre-commit".
 
 # Make sure user.name is set properly
