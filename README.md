@@ -12,6 +12,9 @@ This repo contains the following samples:
 - **search-term:** Fail commit if a specific term is found in the code
 - **verify-name-and-email:** Fail commit if user.name or user.email is incorrect
 
+**_prepare-commit-msg-samples_**
+- **insert-issue-number:** Insert issue number to beginning of the commit message
+
 **_miscellaneous samples_**
 - **default samples:** samples that are automatically generated in .git/hooks
 

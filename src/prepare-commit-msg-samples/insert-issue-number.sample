@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+#
+# Inserts issue number to beginning of the commit message.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+import sys, os, re
+from subprocess import check_output
+# Collect the parameters
+commit_msg_filepath = sys.argv[1]
+if len(sys.argv) > 2:
+commit_type = sys.argv[2]
+else:
+commit_type = ''
+if len(sys.argv) > 3:
+commit_hash = sys.argv[3]
+else:
+commit_hash = ''
+print "prepare-commit-msg: File: %s\nType: %s\nHash: %s" % (commit_msg_filepath, commit_type, commit_hash)
+# Figure out which branch we're on
+branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip()
+print "prepare-commit-msg: On branch '%s'" % branch
+# Populate the commit message with the issue #, if there is one
+if branch.startswith('issue-'):
+print "prepare-commit-msg: Oh hey, it's an issue branch."
+result = re.match('issue-(.*)', branch)
+issue_number = result.group(1)
+with open(commit_msg_filepath, 'r+') as f:
+content = f.read()
+f.seek(0, 0)
+f.write("ISSUE-%s %s" % (issue_number, content))
