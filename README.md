@@ -43,5 +43,7 @@ Below are a variety of helpful resources on how git hooks work.
 
 [Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
 
+[An In-Depth Look at Git Hooks](https://dzone.com/articles/an-in-depth-look-at-git-hooks)
+
 ### Book
 [Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
