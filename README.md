@@ -4,6 +4,14 @@ How to use git hooks - resources and examples.
 ## What are git hooks?
 > "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
+## How to Use
+1. Clone and download this repo if you want to test out a sample before using it on your own project. Otherwise, pick whichever project you have that you want to start using git hooks on.
+2. Choose a sample to use. The "verify-name-and-email" sample is a friendly one to try first.
+3. Navigate to the git hooks folder (.git/hooks) in the project.
+4. Create a new file with the commit type as the file name (eg: commit-msg, pre-rebase, update, etc.). Do not include an extension. (So if trying out the "verify-name-and-email" sample, create a file called "pre-commit")
+5. Open the new file and paste the code from whatever sample you want to use. (eg: [verify-name-and-email.sample](https://github.com/CompSciLauren/git-hooks/blob/master/src/pre-commit-samples/verify-name-and-email.sample))
+6. Save file. Done! Now the git hook will be triggered by whatever event should cause it. (So with "verify-name-and-email", if you try to make a commit when your user.name or user.email in your git config doesn't match the name or email you specified in the git hook, it will fail the commit)
+
 ## Overview of Samples
 This repo contains the following samples:
 
