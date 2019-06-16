@@ -42,6 +42,9 @@ You can bypass pre-commit hooks by adding `--no-verify` to the end of your `git 
 ## Resources
 Below are a variety of helpful resources on how git hooks work.
 
+### Documentation
+[Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
+
 ### Video
 [Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
 
