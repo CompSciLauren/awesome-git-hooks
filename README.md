@@ -50,6 +50,20 @@ Samples that are automatically generated in .git/hooks
 ## Helpful Hints
 You can bypass pre-commit hooks by adding `--no-verify` to the end of your `git commit` command
 
+## Development
+
+Want to contribute? Great!
+
+To fix a bug or add an enhancement, follow these steps:
+
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
 ## Resources
 Below are a variety of helpful resources on how git hooks work.
 
