@@ -19,6 +19,7 @@ This repo contains the following samples:
 - **insert-issue-number:** Insert issue number to beginning of the commit message
 
 **_default samples_**
+
 Samples that are automatically generated in .git/hooks
 - **applypatch-msg:** check the commit log message taken by applypatch from an e-mail message
 - **commit-msg:** check the commit log message to catch duplicate Signed-off-by lines
@@ -36,7 +37,7 @@ Samples that are automatically generated in .git/hooks
 - **update:** block unannotated tags from entering
 
 ## Helpful Hints
-You can bypass pre-commit hooks by adding `--no-verify` to end of `git commit` command
+You can bypass pre-commit hooks by adding `--no-verify` to the end of your `git commit` command
 
 ## Resources
 Below are a variety of helpful resources on how git hooks work.
