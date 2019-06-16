@@ -18,8 +18,22 @@ This repo contains the following samples:
 **_prepare-commit-msg samples_**
 - **insert-issue-number:** Insert issue number to beginning of the commit message
 
-**_miscellaneous samples_**
-- **default samples:** samples that are automatically generated in .git/hooks
+**_default samples_**
+Samples that are automatically generated in .git/hooks
+- **applypatch-msg:** check the commit log message taken by applypatch from an e-mail message
+- **commit-msg:** check the commit log message to catch duplicate Signed-off-by lines
+- **fsmonitor-watchman:** output to stdout all files that have been modified since a given time
+- **post-update:** prepare a packed repository for use over dumb transports
+- **pre-applypatch:** verify what is about to be committed by applypatch from an e-mail message
+- **pre-commit:** verify what is about to be committed
+- **pre-push:** prevent push of commits where the log message starts with "WIP" (work in progress)
+- **pre-rebase:** prevent topic branches that are already merged to 'next' branch from getting rebased, because allowing it would result in rebasing already published history
+- **pre-receive:** echo all push options that start with 'echoback=' and reject all pushes when the "reject" push option is used
+- **prepare-commit-msg:**
+    - remove the "# Please enter the commit message..." help message
+    - include the output of "git diff --name-status -r" into the message, just before the "git status" output
+    - add a Signed-off-by line to the message, that can still be edited (this is rarely a good idea)
+- **update:** block unannotated tags from entering
 
 ## Helpful Hints
 You can bypass pre-commit hooks by adding `--no-verify` to end of `git commit` command
