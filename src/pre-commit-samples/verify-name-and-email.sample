@@ -1,4 +1,6 @@
 #!/bin/sh
+# Based on the original hook from tygertec.com
+# Source: https://www.tygertec.com/git-hooks-practical-uses-windows/
 #
 # Verifies user.name and user.email are set to correct name and email address.
 #

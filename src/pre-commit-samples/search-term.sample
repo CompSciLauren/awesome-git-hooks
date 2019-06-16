@@ -1,6 +1,8 @@
 #!/bin/sh
+# Based on the original hook from hackernoon.com
+# Source: https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c
 #
-# Verify changes to be committed do not contain
+# Verifies changes to be committed do not contain
 # any 'FIXME:' comments.
 #
 # The hook should exit with non-zero status after issuing an appropriate
