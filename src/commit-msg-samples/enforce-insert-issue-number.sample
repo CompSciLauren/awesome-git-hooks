@@ -7,15 +7,18 @@
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the commit.
 #
-# To enable this hook, rename this file to "prepare-commit-msg".
+# To enable this hook, rename this file to "commit-msg".
 
 import sys, os, re
 from subprocess import check_output
+
 # Collect the parameters
 commit_msg_filepath = sys.argv[1]
+
 # Figure out which branch we're on
 branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip()
 print "commit-msg: On branch '%s'" % branch
+
 # Check the commit message if we're on an issue branch
 if branch.startswith('issue-'):
 print "commit-msg: Oh hey, it's an issue branch."
