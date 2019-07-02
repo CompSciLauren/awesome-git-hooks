@@ -1,0 +1,35 @@
+#!/bin/sh
+# Based on a hook from gist.github.com
+# Source: https://gist.github.com/zgohr/4557894
+#
+# Creates a commit and displays a message when a new branch is checked out for the first time.
+#
+# To enable this hook, rename this file to "post-checkout".
+
+from_hash=$1
+to_hash=$2
+checkout_type=$3
+branch_name=$(git rev-parse --abbrev-ref HEAD)
+
+light_red='\033[1;31m'
+no_color='\033[0m'
+
+containsElement () {
+    local e
+    for e in "${@:2}"; do [[ "$e" == "$1" ]] && return 0; done
+    return 1
+}
+
+if [ $checkout_type -ne 1 ]
+then
+    exit 0 ; # Not a branch checkout
+fi
+
+if [ $from_hash != $to_hash ]
+then
+    exit 0 ; # Not checking out a new branch
+fi
+
+# Create a commit and display a message
+git commit --allow-empty -m "Created branch $branch_name" --no-verify
+echo -e "\n${light_red}Remember to change parent pom version to match branch name in every module!${no_color}\n"
