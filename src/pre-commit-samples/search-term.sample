@@ -1,5 +1,5 @@
 #!/bin/sh
-# Based on the original hook from hackernoon.com
+# Based on a hook from hackernoon.com
 # Source: https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c
 #
 # Verifies changes to be committed do not contain
