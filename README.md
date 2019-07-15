@@ -1,5 +1,11 @@
 # git-hooks
-:anchor: A collection of git hooks with resources for learning how to use them.
+:anchor: A collection of useful, easy to use, well-documented git hooks.
+
+:heavy_check_mark: Nothing to install/download
+
+:heavy_check_mark: Code is well-documented
+
+:heavy_check_mark: Grab & go! Copy the code you want to use and paste into your .git/hooks folder
 
 ## What are git hooks?
 Git hooks are custom scripts you can use to automate tasks which are triggered before or after a git command is executed.
@@ -10,12 +16,15 @@ Do you ever push your code, only to realize you forgot to run that darn formatti
 
 Ever wonder why your code doesn't work after switching branches and realize it's because you forgot to update submodules (again)? Don't worry, there's a git hook for that too!
 
-Do you write code using a work email at work and a school email at school? Ever forget to use the correct email in your config? That means you won't show up correctly as the commit author. Time to *git* hooked on git hooks! (Ha! :laughing:)
+Do you write code using a work email at work and a school email at school using the same computer? Ever accidentally use the wrong email in your project's config? That means you won't show up correctly as the commit author. Time to *git* hooked on git hooks!
 
 ## How to Use a Git Hook
 1. Pick a sample, any sample! Try the "verify-name-and-email" one if you're not sure where to start.
 2. Navigate to your project's hooks folder (.git/hooks).
 3. You should see a list of files already in there. Create a new file called the exact commit type that you want to use (eg: "commit-msg", "pre-rebase", "update", etc.). Do not give it an extension. (So if trying out the "verify-name-and-email" sample, create a file called "pre-commit")
+
+![create new file](create-new-file.gif)
+
 4. Open your new file and paste the code from the sample you chose out of this repo. (eg: [verify-name-and-email.sample](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-samples/verify-name-and-email.sample))
 5. Save file. Done! Now the git hook will be triggered by whatever event should cause it. (So with "verify-name-and-email", if you try to make a commit when your user.name or user.email in your git config doesn't match the name or email you specified in the git hook, it will fail the commit)
 
@@ -59,6 +68,8 @@ Samples that are automatically generated in .git/hooks
 
 ## Helpful Hints
 You can bypass pre-commit hooks by adding `--no-verify` to the end of your `git commit` command
+
+If hooks fail to execute, make sure your hook files are executable (chmod +x)
 
 ## Development
 
