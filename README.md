@@ -68,7 +68,7 @@ Samples that are automatically generated in .git/hooks
 - **update:** block unannotated tags from entering
 
 ## Helpful Hints
-You can bypass pre-commit hooks by adding `--no-verify` to the end of your `git commit` command
+You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end of either command
 
 If hooks fail to execute, make sure your hook files are executable (chmod +x)
 
