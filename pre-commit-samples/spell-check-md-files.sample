@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Based on a hook from tygertec.com
+# Source: https://cloudrkt.com/spellcheck-hook.html
+#
+# Used to check files with the .md extension (markdown) for spelling errors.
+# It will run each .md file through aspell and returns an exit code other than 0 when it matches.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+# Where are the markdown files located?
+SEARCH_DIR="content"
+
+# Set some fancy colors to indicate errors and wrongly spelled words.
+RED='\033[0;31m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+# Start checking the current directory for md files
+for file in $(find $SEARCH_DIR -type f -name "*.md");
+        # Pass each .md file through aspell.
+        do output=$(cat $file | aspell --lang=en list);
+        if [[ $? != 0 ]]; then
+                echo -e "${RED}Error found in output${NC}, cannot continue." 
+                echo -e "Please check manually for aspell -c $file?"
+                exit 1
+        elif [[ $output ]]; then
+                echo -e "-> ${RED}Spelling errors found${NC} <-"
+                echo -e "${YELLOW}$output${NC}" |sort -u
+                echo "Please check with: aspell -c $file"
+                bad="yes"
+                good="yes"
+        fi
+done
+
+# Matched in aspell
+if [[ "$bad" == "yes" ]]; then
+        exit 1
+fi
+
+# No match in aspell
+if [[ "$good" == "yes" ]]; then
+        echo -e "Spelling check is ${RED}OK${NC}, good to go."
+        exit 0
+fi

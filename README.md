@@ -43,6 +43,7 @@ This repo contains the following samples:
 **_pre-commit samples_** - invoked by `git commit`
 - **format-code:** run command to format code and re-add any files modified after formatting
 - **search-term:** fail commit if a specific term is found in the code
+- **spell-check-md-files:** check files with .md extension for spelling errors
 - **verify-name-and-email:** fail commit if user.name or user.email is incorrect
 
 **_prepare-commit-msg samples_** - invoked by `git commit`
