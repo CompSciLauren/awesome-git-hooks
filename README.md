@@ -15,11 +15,8 @@
 - [Quick Start - How to Use a Git Hook](#quick-start---how-to-use-a-git-hook)
 - [Overview of Hooks](#overview-of-hooks)
 - [Helpful Hints](#helpful-hints)
-- [Resources](#resources)
-  - [Documentation](#documentation)
-  - [Video](#video)
-  - [Articles](#articles)
-  - [Book](#book)
+- [Written Guides](#written-guides)
+- [Video Guides](#video-guides)
 
 ## Git Hooks Explained
 
@@ -117,37 +114,35 @@ You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end
 
 If hooks fail to execute, make sure your hook files are executable (chmod +x)
 
-## Resources
+## Written Guides
 
-Below are a variety of helpful resources on how git hooks work.
+- [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
 
-### Documentation
+- [Git Pro book by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
 
-[Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
+- [An Introduction to Git Hooks](https://www.sitepoint.com/introduction-git-hooks/)
 
-### Video
+- [Atlassian Tutorial on Git Hooks](https://www.atlassian.com/ru/git/tutorials/git-hooks)
 
-[Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
+- [Easy git hooks with husky](https://www.vojtechruzicka.com/githooks-husky/)
 
-### Articles
+- [Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked 'Git Hooked')
 
-[An Introduction to Git Hooks](https://www.sitepoint.com/introduction-git-hooks/)
+- [How To Use Git Hooks To Automate Development and Deployment Tasks](https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks)
 
-[Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
+- [Automate Your Workflow with Git Hooks](https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c)
 
-[Easy git hooks with husky](https://www.vojtechruzicka.com/githooks-husky/)
+- [Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 'Using JavaScript in Your Git Hooks')
 
-[Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked 'Git Hooked')
+- [An In-Depth Look at Git Hooks](https://dzone.com/articles/an-in-depth-look-at-git-hooks)
 
-[Automate Your Workflow with Git Hooks](https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c)
+- [Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
 
-[Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 'Using JavaScript in Your Git Hooks')
+## Video Guides
 
-[An In-Depth Look at Git Hooks](https://dzone.com/articles/an-in-depth-look-at-git-hooks)
+- [Git Hooks Part 1 - Getting Started](https://www.youtube.com/watch?v=aB3eq52sZSU)
 
-### Book
-
-[Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+- [Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
 
 ## License
 
