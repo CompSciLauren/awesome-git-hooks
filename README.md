@@ -1,6 +1,13 @@
-# Awesome Git Hooks [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+<h1 align="center">
+  <a href="https://git-scm.com/">
+  <img width="455" src="https://github.com/compscilauren/awesome-git-hooks/blob/master/git-logo.png" alt="Awesome Git Hooks"></a><br>Awesome Git Hooks
+</h1>
 
-:anchor: Easy-to-use git hooks for automating tasks during git workflows.
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+> :anchor: Easy-to-use git hooks for automating tasks during git workflows.
+
+Git hooks are custom scripts you can use to automate tasks which are triggered before or after a git command is executed. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. This repo contains helpful resources as well as a variety of git hook scripts that can be easily customized to serve different purposes.
 
 :heavy_check_mark: Nothing to install/download
 
@@ -10,7 +17,6 @@
 
 ## Contents
 
-- [Git Hooks Explained](#git-hooks-explained)
 - [Common Situations Where Git Hooks are Useful](#common-situations-where-git-hooks-are-useful)
 - [Quick Start - How to Use a Git Hook](#quick-start---how-to-use-a-git-hook)
 - [Overview of Hooks](#overview-of-hooks)
@@ -18,19 +24,13 @@
 - [Written Guides](#written-guides)
 - [Video Guides](#video-guides)
 
-## Git Hooks Explained
-
-Git hooks are custom scripts you can use to automate tasks which are triggered before or after a git command is executed.
-
-> "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
-
 ## Common Situations Where Git Hooks are Useful
 
 Do you ever push your code, only to realize you forgot to run that darn formatting command? There's a git hook for that!
 
-Ever wonder why your code doesn't work after switching branches and realize it's because you forgot to update submodules (again)? Don't worry, there's a git hook for that too!
+Do you leave little comments in your code to remind yourself of things to fix, only to commit those comments by accident? Don't worry, there's a git hook for that too!
 
-Do you write code using a work email at work and a school email at school using the same computer? Ever accidentally use the wrong email in your project's config? That means you won't show up correctly as the commit author. Time to _git_ hooked on git hooks!
+Ever wonder why your code doesn't work after switching branches and realize it's because you forgot to update submodules (again)? Time to _git_ hooked on git hooks!
 
 ## Quick Start - How to Use a Git Hook
 
@@ -110,9 +110,9 @@ invoked by "git receive-pack" with arguments: refname sha1-old sha1-new
 
 ## Helpful Hints
 
-You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end of either command
+You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end of either command.
 
-If hooks fail to execute, make sure your hook files are executable (chmod +x)
+If hooks fail to execute, make sure your hook files are executable (chmod +x).
 
 ## Written Guides
 
