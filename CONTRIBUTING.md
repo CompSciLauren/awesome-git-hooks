@@ -2,7 +2,7 @@
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-Please ensure your pull request adheres to the following guidelines:
+Your contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
 
 - Search previous pull requests before making a new one, as yours may be a duplicate.
 - Keep pull request title short and simple, but descriptive.
