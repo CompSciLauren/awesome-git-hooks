@@ -1,5 +1,6 @@
-# git-hooks
-:anchor: A collection of useful, easy to use, well-documented git hooks.
+# Awesome Git Hooks [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+**:anchor: Easy-to-use git hooks for automating tasks during git workflows.**
 
 :heavy_check_mark: Nothing to install/download
 
@@ -7,107 +8,148 @@
 
 :heavy_check_mark: Grab & go! Copy the code you want to use and paste into your .git/hooks folder
 
-## What are git hooks?
+## Contents
+
+- [Git Hooks Explained](#git-hooks-explained)
+- [Common Situations Where Git Hooks are Useful](#common-situations-where-git-hooks-are-useful)
+- [Quick Start - How to Use a Git Hook](#quick-start-how-to-use-a-git-hook)
+- [Overview of Hooks](#overview-of-hooks)
+- [Helpful Hints](#helpful-hints)
+- [Contributing](#contributing)
+- [Resources](#resources)
+  - [Documentation](#documentation)
+  - [Video](#video)
+  - [Articles](#articles)
+  - [Book](#book)
+
+## Git Hooks Explained
+
 Git hooks are custom scripts you can use to automate tasks which are triggered before or after a git command is executed.
+
 > "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons." - [git-scm.com](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
-### Common Situations Where Git Hooks are Useful
+## Common Situations Where Git Hooks are Useful
+
 Do you ever push your code, only to realize you forgot to run that darn formatting command? There's a git hook for that!
 
 Ever wonder why your code doesn't work after switching branches and realize it's because you forgot to update submodules (again)? Don't worry, there's a git hook for that too!
 
-Do you write code using a work email at work and a school email at school using the same computer? Ever accidentally use the wrong email in your project's config? That means you won't show up correctly as the commit author. Time to *git* hooked on git hooks!
+Do you write code using a work email at work and a school email at school using the same computer? Ever accidentally use the wrong email in your project's config? That means you won't show up correctly as the commit author. Time to _git_ hooked on git hooks!
 
-## How to Use a Git Hook
-1. Pick a sample, any sample! Try the "verify-name-and-email" one if you're not sure where to start.
+## Quick Start - How to Use a Git Hook
+
+1. Pick a hook, any hook! Try the "verify-name-and-email" one if you're not sure where to start.
 2. Navigate to your project's hooks folder (.git/hooks).
-3. You should see a list of files already in there. Create a new file called the exact commit type that you want to use (eg: "commit-msg", "pre-rebase", "update", etc.). Do not give it an extension. (So if trying out the "verify-name-and-email" sample, create a file called "pre-commit")
+3. You should see a list of files already in there. Create a new file called the exact commit type that you want to use (eg: "commit-msg", "pre-rebase", "update", etc.). Do not give it an extension. (So if trying out the "verify-name-and-email" hook, create a file called "pre-commit")
 
 ![create new file](create-new-file.gif)
 
-4. Open your new file and paste the code from the sample you chose out of this repo. (eg: [verify-name-and-email.sample](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-samples/verify-name-and-email.sample))
+4. Open your new file and paste the code from the hook you chose out of this repo. (eg: [verify-name-and-email.hook](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-hooks/verify-name-and-email.hook))
 5. Save file. Done! Now the git hook will be triggered by whatever event should cause it. (So with "verify-name-and-email", if you try to make a commit when your user.name or user.email in your git config doesn't match the name or email you specified in the git hook, it will fail the commit)
 
-## Overview of Samples
-A sample is simply a git hook file (they all have .sample as the extension). Each git hook is a sequence of commands to be executed at some point either before or after a git command is executed. All samples in this repo are organized based on when a person would most likely need them to be executed. Follow the steps above to get started using a git hook. For a list of git commands that can trigger a git hook, visit [git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
+## Overview of Hooks
 
-This repo contains the following samples:
+Each git hook is a sequence of commands to be executed at some point either before or after a git command is executed. All hooks in this repo are organized based on when a person would most likely need them to be executed. Follow the steps above to get started using a git hook. For a list of git commands that can trigger a git hook, visit [git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
 
-**_commit-msg samples_** - invoked by `git commit` and `git merge`
-- **enforce-insert-issue-number:** make sure user did not delete the ISSUE-[#] string that was generated by prepare-commit-msg/insert-issue-number.sample
+This repo contains the following hooks:
 
-**_post-checkout samples_** - invoked by `git checkout`
-- **delete-pyc-files:** delete all .pyc files every time a new branch is checked out
-- **new-branch-commit-and-display-message:** create a commit and display a message when a new branch is checked out for the first time
+### commit-msg hooks
 
-**_pre-commit samples_** - invoked by `git commit`
-- **format-code:** run command to format code and re-add any files modified after formatting
-- **search-term:** fail commit if a specific term is found in the code
-- **spell-check-md-files:** check files with .md extension for spelling errors
-- **verify-name-and-email:** fail commit if user.name or user.email is incorrect
+invoked by `git commit` and `git merge`
 
-**_prepare-commit-msg samples_** - invoked by `git commit`
-- **insert-issue-number:** insert issue number to beginning of the commit message
+- **[enforce-insert-issue-number:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/commit-msg-hooks/enforce-insert-issue-number.hook)** make sure user did not delete the ISSUE-[#] string that was generated by prepare-commit-msg/insert-issue-number.hook
 
-**_default samples_**
+### post-checkout hooks
 
-Samples that are automatically generated in .git/hooks
-- **applypatch-msg:** check the commit log message taken by applypatch from an e-mail message
-- **commit-msg:** check the commit log message to catch duplicate Signed-off-by lines
-- **fsmonitor-watchman:** output to stdout all files that have been modified since a given time
-- **post-update:** prepare a packed repository for use over dumb transports
-- **pre-applypatch:** verify what is about to be committed by applypatch from an e-mail message
-- **pre-commit:** verify what is about to be committed
-- **pre-push:** prevent push of commits where the log message starts with "WIP" (work in progress)
-- **pre-rebase:** prevent topic branches that are already merged to 'next' branch from getting rebased, because allowing it would result in rebasing already published history
-- **pre-receive:** echo all push options that start with 'echoback=' and reject all pushes when the "reject" push option is used
-- **prepare-commit-msg:**
-    - remove the "# Please enter the commit message..." help message
-    - include the output of "git diff --name-status -r" into the message, just before the "git status" output
-    - add a signed-off-by line to the message, that can still be edited (this is rarely a good idea)
-- **update:** block unannotated tags from entering
+invoked by `git checkout`
+
+- **[delete-pyc-files:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/post-checkout-hooks/delete-pyc-files.hook)** delete all .pyc files every time a new branch is checked out
+- **[new-branch-alert:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/post-checkout-hooks/new-branch-alert.hook)** display a message when a new branch is checked out for the first time
+
+### post-update hooks
+
+invoked by git-receive-pack on the remote repository, which happens when a git push is done on a local repository
+
+- **[update-server-info:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/post-update-hooks/update-server-info.hook)** prepare a packed repository for use over dumb transports (e.g. http)
+
+### pre-commit hooks
+
+invoked by `git commit`
+
+- **[format-code:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/format-code.hook)** run command to format code and re-add any files modified after formatting
+- **[search-term:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/search-term.hook)** fail commit if a specific term is found in the code
+- **[spell-check-md-files:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/spell-check-md-files.hook)** check files with .md extension for spelling errors
+- **[verify-name-and-email:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/verify-name-and-email.hook)** fail commit if user.name or user.email is incorrect
+
+### prepare-commit-msg hooks
+
+invoked by `git commit`
+
+- **[include-git-diff-name-status:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/prepare-commit-msg-hooks/include-git-diff-name-status.hook)** include the output of "git diff --name-status -r" into the message, just before the "git status" output
+- **[insert-issue-number:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/prepare-commit-msg-hooks/insert-issue-number.hook)** insert issue number to beginning of the commit message
+
+### pre-push hooks
+
+invoked by `git push`
+
+- **[prevent-bad-push:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-push-hooks/prevent-bad-push.hook)** prevent push of commits where the log message starts with "WIP" (work in progress)
+
+### pre-rebase hooks
+
+invoked by `git rebase`
+
+- **[prevent-rebase:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-rebase-hooks/prevent-rebase.hook)** prevent topic branches that are already merged to 'next' branch from getting rebased, because allowing it would result in rebasing already published history
+
+### query-watchman hooks
+
+not invoked by a specific git command
+
+- **[fsmonitor-watchman:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/query-watchman-hooks/fsmonitor-watchman.hook)** output to stdout all files that have been modified since a given time
+
+### update hooks
+
+invoked by "git receive-pack" with arguments: refname sha1-old sha1-new
+
+- **[update:](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/update-hooks/prevent-unannotated-tags.hook)** block unannotated tags from entering
 
 ## Helpful Hints
+
 You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end of either command
 
 If hooks fail to execute, make sure your hook files are executable (chmod +x)
 
-## Development
+## Contributing
 
-Want to contribute? Great!
-
-To fix a bug or add an enhancement, follow these steps:
-
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request
+Your contributions are always welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
 ## Resources
+
 Below are a variety of helpful resources on how git hooks work.
 
 ### Documentation
+
 [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
 
 ### Video
+
 [Git hooks and practical uses. Yes, even on Windows.](http://www.youtube.com/watch?feature=player_embedded&v=fMYv6-SZsSo&t=240s)
 
 ### Articles
+
 [An Introduction to Git Hooks](https://www.sitepoint.com/introduction-git-hooks/)
 
 [Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
 
 [Easy git hooks with husky](https://www.vojtechruzicka.com/githooks-husky/)
 
-[Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked "Git Hooked")
+[Git Hooked](https://www.javascriptjanuary.com/blog/git-hooked 'Git Hooked')
 
 [Automate Your Workflow with Git Hooks](https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c)
 
-[Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 "Using JavaScript in Your Git Hooks")
+[Using JavaScript in Your Git Hooks](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334 'Using JavaScript in Your Git Hooks')
 
 [An In-Depth Look at Git Hooks](https://dzone.com/articles/an-in-depth-look-at-git-hooks)
 
 ### Book
+
 [Git Pro by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
