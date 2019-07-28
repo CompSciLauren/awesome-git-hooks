@@ -3,7 +3,7 @@
   <img width="455" src="https://github.com/compscilauren/awesome-git-hooks/blob/master/git-logo.png" alt="Awesome Git Hooks"></a><br>Awesome Git Hooks
 </h1>
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+<p align="center"><a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome Lists"></a></p>
 
 > :anchor: Easy-to-use git hooks for automating tasks during git workflows.
 
@@ -17,37 +17,23 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 ## Contents
 
-- [Common Situations Where Git Hooks are Useful](#common-situations-where-git-hooks-are-useful)
 - [Quick Start - How to Use a Git Hook](#quick-start---how-to-use-a-git-hook)
-- [Overview of Hooks](#overview-of-hooks)
-- [Helpful Hints](#helpful-hints)
+- [Git Hook Scripts](#git-hook-scripts)
 - [Written Guides](#written-guides)
 - [Video Guides](#video-guides)
-
-## Common Situations Where Git Hooks are Useful
-
-Do you ever push your code, only to realize you forgot to run that darn formatting command? There's a git hook for that!
-
-Do you leave little comments in your code to remind yourself of things to fix, only to commit those comments by accident? Don't worry, there's a git hook for that too!
-
-Ever wonder why your code doesn't work after switching branches and realize it's because you forgot to update submodules (again)? Time to _git_ hooked on git hooks!
 
 ## Quick Start - How to Use a Git Hook
 
 1. Pick a hook, any hook! Try the "verify-name-and-email" one if you're not sure where to start.
 2. Navigate to your project's hooks folder (.git/hooks).
-3. You should see a list of files already in there. Create a new file called the exact commit type that you want to use (eg: "commit-msg", "pre-rebase", "update", etc.). Do not give it an extension. (So if trying out the "verify-name-and-email" hook, create a file called "pre-commit")
+3. You should see a list of files already in there. Create a new file called the exact commit type that you want to use (eg: "commit-msg", "pre-rebase", "pre-commit", etc). Do not give it an extension.
 
 ![create new file](create-new-file.gif)
 
-4. Open your new file and paste the code from the hook you chose out of this repo. (eg: [verify-name-and-email.hook](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-hooks/verify-name-and-email.hook))
-5. Save file. Done! Now the git hook will be triggered by whatever event should cause it. (So with "verify-name-and-email", if you try to make a commit when your user.name or user.email in your git config doesn't match the name or email you specified in the git hook, it will fail the commit)
+4. Open your new file and paste the code from the hook you chose out of this repo (eg: [verify-name-and-email.hook](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-hooks/verify-name-and-email.hook)).
+5. Save file. Done! Now the git hook will be triggered automatically.
 
-## Overview of Hooks
-
-Each git hook is a sequence of commands to be executed at some point either before or after a git command is executed. All hooks in this repo are organized based on when a person would most likely need them to be executed. Follow the steps above to get started using a git hook. For a list of git commands that can trigger a git hook, visit [git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
-
-This repo contains the following hooks:
+## Git Hook Scripts
 
 ### commit-msg hooks
 
@@ -107,12 +93,6 @@ not invoked by a specific git command
 invoked by "git receive-pack" with arguments: refname sha1-old sha1-new
 
 - [update](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/update-hooks/prevent-unannotated-tags.hook) - Block unannotated tags from entering.
-
-## Helpful Hints
-
-You can bypass pre-commit or commit-msg hooks by adding `--no-verify` to the end of either command.
-
-If hooks fail to execute, make sure your hook files are executable (chmod +x).
 
 ## Written Guides
 
