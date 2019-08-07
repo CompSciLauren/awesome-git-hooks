@@ -1,0 +1,23 @@
+{
+  "name": "awesome-git-hooks",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r   <a href=\"https://git-scm.com/\">\r   <img width=\"455\" src=\"https://github.com/compscilauren/awesome-git-hooks/blob/master/git-logo.png\" alt=\"Awesome Git Hooks\"></a><br>Awesome Git Hooks\r </h1>",
+  "main": "index.js",
+  "dependencies": {
+    "awesome-lint": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "awesome-lint https://github.com/CompSciLauren/awesome-git-hooks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CompSciLauren/awesome-git-hooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CompSciLauren/awesome-git-hooks/issues"
+  },
+  "homepage": "https://github.com/CompSciLauren/awesome-git-hooks#readme"
+}

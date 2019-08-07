@@ -5,6 +5,8 @@
 
 <p align="center"><a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome Lists"></a></p>
 
+# Awesome Git Hooks
+
 > :anchor: Easy-to-use git hooks for automating tasks during git workflows.
 
 Git hooks are custom scripts you can use to automate tasks which are triggered before or after a git command is executed. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. This repo contains helpful resources as well as a variety of git hook scripts that can be easily customized to serve different purposes.
