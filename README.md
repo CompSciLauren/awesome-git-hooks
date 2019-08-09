@@ -21,6 +21,7 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 - [Quick Start - How to Use a Git Hook](#quick-start---how-to-use-a-git-hook)
 - [Git Hook Scripts](#git-hook-scripts)
+- [Tools for Working with Git Hooks](#tools-for-working-with-git-hooks)
 - [Written Guides](#written-guides)
 - [Video Guides](#video-guides)
 
@@ -95,6 +96,14 @@ not invoked by a specific git command
 invoked by "git receive-pack" with arguments: refname sha1-old sha1-new
 
 - [update](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/update-hooks/prevent-unannotated-tags.hook) - Block unannotated tags from entering.
+
+## Tools for Working with Git Hooks
+
+- [Husky](https://github.com/typicode/husky) - Manage git hooks with a nice user interface.
+
+- [Overcommit](https://github.com/sds/overcommit) - A fully configurable and extendable git hook manager.
+
+- [Git Hooks](https://github.com/icefox/git-hooks) - Manage project, user, and global git hooks more easily.
 
 ## Written Guides
 
