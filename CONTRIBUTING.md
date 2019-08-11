@@ -30,6 +30,7 @@ Requirements for adding a new git hook:
 
 - Add a comment above each body/section of code to explain what it's doing.
 - Add additional comments as needed.
+- Add it to the list of Git Hook Scripts on the readme, following the existing formatting.
 - If you choose not to follow one of the requirements listed, please explain your reasoning.
 
 To fix a bug or add an enhancement, follow these steps:
