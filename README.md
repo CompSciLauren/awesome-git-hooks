@@ -29,8 +29,8 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
   - [pre-rebase](#pre-rebase)
   - [query-watchman](#query-watchman)
   - [update](#update)
-- [Quick Start - How to Use a Git Hook](#quick-start---how-to-use-a-git-hook)
-- [Tools for Working with Git Hooks](#tools-for-working-with-git-hooks)
+- [Quick Start](#quick-start)
+- [Tools](#tools)
 - [Written Guides](#written-guides)
 - [Video Guides](#video-guides)
 
@@ -77,7 +77,7 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 - [update](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/update-hooks/prevent-unannotated-tags.hook) - Block unannotated tags from entering.
 
-## Quick Start - How to Use a Git Hook
+## Quick Start
 
 1. Pick a hook, any hook! Try the "verify-name-and-email" one if you're not sure where to start.
 2. Navigate to your project's hooks folder (.git/hooks).
@@ -88,7 +88,7 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 4. Open your new file and paste the code from the hook you chose out of this repo (eg: [verify-name-and-email.hook](https://github.com/CompSciLauren/git-hooks/blob/master/pre-commit-hooks/verify-name-and-email.hook)).
 5. Save file. Done! Now the git hook will be triggered automatically.
 
-## Tools for Working with Git Hooks
+## Tools
 
 - [Husky](https://github.com/typicode/husky) - Manage git hooks with a nice user interface.
 
