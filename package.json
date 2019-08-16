@@ -7,7 +7,8 @@
     "awesome-lint": "^0.11.0"
   },
   "devDependencies": {
-    "bats": "^1.1.0"
+    "bats": "^1.1.0",
+    "bats-mock": "^1.0.1"
   },
   "scripts": {
     "test": "awesome-lint https://github.com/CompSciLauren/awesome-git-hooks"
