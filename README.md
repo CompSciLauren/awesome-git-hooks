@@ -96,6 +96,8 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 - [Git Hooks](https://github.com/icefox/git-hooks) - Manage project, user, and global git hooks more easily.
 
+- [CaptainHook](https://github.com/CaptainHookPhp/captainhook) - Git hooks manager for PHP developers.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
