@@ -17,6 +17,8 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 :heavy_check_mark: Grab & go! Copy the code you want to use and paste into your .git/hooks folder
 
+Contributions are *always* welcome! Please see our [Contribution Guidelines](CONTRIBUTING.md). Also, if you don't find the script you want below, you can [create a new issue](https://github.com/CompSciLauren/awesome-git-hooks/issues/new?assignees=&labels=enhancement&template=new-git-hook-script-request.md&title=) to request it.
+
 ## Contents
 
 - [Git Hook Scripts](#git-hook-scripts)
