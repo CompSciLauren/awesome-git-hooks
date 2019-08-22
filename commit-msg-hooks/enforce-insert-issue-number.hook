@@ -7,6 +7,9 @@
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the commit.
 #
+# Requirements: 
+#   * Python 2/3
+#
 # To enable this hook, rename this file to "commit-msg".
 
 import sys, os, re

@@ -5,6 +5,9 @@
 # Used to check files with the .md extension (markdown) for spelling errors.
 # It will run each .md file through aspell and returns an exit code other than 0 when it matches.
 #
+# Requirements: 
+#   * Bash
+#
 # To enable this hook, rename this file to "pre-commit".
 
 # Where are the markdown files located?

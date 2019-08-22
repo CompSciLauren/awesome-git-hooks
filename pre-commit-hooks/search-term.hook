@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Based on a hook from hackernoon.com
 # Source: https://hackernoon.com/automate-your-workflow-with-git-hooks-fef5d9b2a58c
 #
@@ -7,6 +7,9 @@
 #
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the commit.
+#
+# Requirements: 
+#   * Bash
 #
 # To enable this hook, rename this file to "pre-commit".
 

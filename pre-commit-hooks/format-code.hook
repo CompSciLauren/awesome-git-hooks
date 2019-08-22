@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Formats code using mvn fmt:format command.
 # Any staged files that are modified by this command will be re-added to the commit.
+#
+# Requirements: 
+#   * Bash
 #
 # To enable this hook, rename this file to "pre-commit".
 

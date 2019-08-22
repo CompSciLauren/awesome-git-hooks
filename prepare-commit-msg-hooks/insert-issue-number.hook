@@ -4,6 +4,9 @@
 #
 # Inserts issue number to beginning of the commit message.
 #
+# Requirements: 
+#   * Python
+#
 # To enable this hook, rename this file to "prepare-commit-msg".
 
 import sys, os, re
