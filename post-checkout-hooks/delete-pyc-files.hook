@@ -4,6 +4,9 @@
 #
 # Deletes all .pyc files every time a new branch is checked out.
 #
+# Requirements: 
+#   * Python 2/3
+#
 # To enable this hook, rename this file to "post-checkout".
 
 import sys, os, re

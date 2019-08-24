@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 # Based on a hook from gist.github.com
 # Source: https://gist.github.com/zgohr/4557894
 #
 # Creates a commit and displays a custom message when a new branch is checked out for the first time.
 # A commit is made in order to help determine if a new branch has been created.
+#
+# Requirements: 
+#   * Bash
 #
 # To enable this hook, rename this file to "post-checkout".
 
