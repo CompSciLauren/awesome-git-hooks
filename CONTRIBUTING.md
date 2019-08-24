@@ -2,7 +2,7 @@
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-Contributions are *always* welcome! Please ensure you follow the guidelines explained below. Thank you!
+Contributions are _always_ welcome! Please ensure you follow the guidelines explained below. Thank you!
 
 ## Pull Requests
 
@@ -27,7 +27,7 @@ Hooray! We like these a lot. These are the requirements for adding a new Git hoo
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the [git command]. (If your script doesn't do this then you can remove this section)
 #
-# Requirements: 
+# Requirements:
 #   * Python 2/3 (whatever language the script is written in)
 #
 # To enable this hook, rename this file to "[type of git hook]".

@@ -7,7 +7,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome Lists"></a>
   <a href="https://github.com/CompSciLauren/awesome-git-hooks/blob/master/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs welcome"></a>
   <a href="https://travis-ci.org/CompSciLauren/awesome-git-hooks"><img src="https://travis-ci.org/CompSciLauren/awesome-git-hooks.svg?branch=master" alt="Build Status"></a>
-</p> 
+</p>
 
 # Awesome Git Hooks
 
@@ -21,7 +21,7 @@ Git hooks are custom scripts you can use to automate tasks which are triggered b
 
 :heavy_check_mark: Grab & go! Copy the code you want to use and paste into your .git/hooks folder
 
-Contributions are *always* welcome! Please see our [Contribution Guidelines](CONTRIBUTING.md). Also, if you don't find the script you want below, you can [create a new issue](https://github.com/CompSciLauren/awesome-git-hooks/issues/new?assignees=&labels=enhancement&template=new-git-hook-script-request.md&title=) to request it.
+Contributions are _always_ welcome! Please see our [Contribution Guidelines](CONTRIBUTING.md). Also, if you don't find the script you want below, you can [create a new issue](https://github.com/CompSciLauren/awesome-git-hooks/issues/new?assignees=&labels=enhancement&template=new-git-hook-script-request.md&title=) to request it.
 
 ## Contents
 
@@ -44,10 +44,10 @@ Contributions are *always* welcome! Please see our [Contribution Guidelines](CON
 
 Note: The icon next to each script signifies what language it is written in.
 
-| icon | language | icon | language |
-| --- | --- | --- | --- | 
-| <img width="14" src="bash-icon.png" alt="Bash Icon"> | `bash` | <img width="14" src="perl-icon.png" alt="Perl Icon"> | `perl` |
-| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` | | |
+| icon                                                     | language | icon                                                 | language |
+| -------------------------------------------------------- | -------- | ---------------------------------------------------- | -------- |
+| <img width="14" src="bash-icon.png" alt="Bash Icon">     | `bash`   | <img width="14" src="perl-icon.png" alt="Perl Icon"> | `perl`   |
+| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` |                                                      |          |
 
 ### commit-msg
 
