@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-LOG="./tests.log"
+LOG="./tests/tests.log"
 
 teardown() {
     # Reset user.name to correct value
