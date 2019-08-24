@@ -11,7 +11,8 @@
     "bats-mock": "^1.0.1"
   },
   "scripts": {
-    "test": "awesome-lint https://github.com/CompSciLauren/awesome-git-hooks"
+    "lint": "awesome-lint https://github.com/CompSciLauren/awesome-git-hooks",
+    "test": "npm run lint && bats tests/"
   },
   "repository": {
     "type": "git",
