@@ -3,7 +3,11 @@
   <img width="455" src="https://github.com/compscilauren/awesome-git-hooks/blob/master/git-logo.png" alt="Awesome Git Hooks"></a><br>Awesome Git Hooks
 </h1>
 
-<p align="center"><a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome Lists"></a></p>
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome Lists"></a>
+  <a href="https://github.com/CompSciLauren/awesome-git-hooks/blob/master/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs welcome"></a>
+  <a href="https://travis-ci.org/CompSciLauren/awesome-git-hooks"><img src="https://travis-ci.org/CompSciLauren/awesome-git-hooks.svg?branch=master" alt="Build Status"></a>
+</p> 
 
 # Awesome Git Hooks
 
