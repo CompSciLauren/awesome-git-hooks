@@ -9,4 +9,4 @@
 # To enable this hook, rename this file to "pre-commit".
 
 mvn fmt:format
-git diff --name-only --cached | xargs -l git add
+git diff --name-only --cached --diff-filter=d | xargs -l git add
