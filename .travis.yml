@@ -3,3 +3,8 @@ node_js:
   - 'node'
 git:
   depth: false
+addons:
+  apt:
+    packages:
+      - aspell
+      - aspell-en
