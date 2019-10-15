@@ -5,7 +5,7 @@
 # Creates a commit and displays a custom message when a new branch is checked out for the first time.
 # A commit is made in order to help determine if a new branch has been created.
 #
-# Requirements: 
+# Requirements:
 #   * Bash
 #
 # To enable this hook, rename this file to "post-checkout".
@@ -14,6 +14,7 @@ from_hash=$1
 to_hash=$2
 checkout_type=$3
 branch_name=$(git rev-parse --abbrev-ref HEAD)
+from_branch_name=$(git name-rev --name-only $from_hash)
 
 light_red='\033[1;31m'
 no_color='\033[0m'
@@ -30,6 +31,11 @@ then
 fi
 
 if [ $from_hash != $to_hash ]
+then
+    exit 0 ; # Not checking out a new branch
+fi
+
+if [ $branch_name == $from_branch_name ]
 then
     exit 0 ; # Not checking out a new branch
 fi
