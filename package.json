@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "awesome-lint https://github.com/CompSciLauren/awesome-git-hooks",
-    "test": "npm run lint && bats tests/"
+    "test": "git config core.hooksPath repo-hooks/ && npm run lint && bats tests/"
   },
   "repository": {
     "type": "git",
