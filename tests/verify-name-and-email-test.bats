@@ -2,17 +2,27 @@
 
 LOG="./tests/tests.log"
 
+setup() {
+    # Preserve original user name/email
+    ORIG_GIT_USER="$(git config --get --local user.name || true)"
+    ORIG_GIT_EMAIL="$(git config --get --local user.email || true)"
+}
+
 teardown() {
-    # Reset user.name to correct value
-    if [[ "$(git config user.name)" != "Lauren Stephenson" ]]; then
-        $(git config --unset-all user.name)
-        $(git config user.name "Lauren Stephenson")
+    # Restore original user name/email
+    git config --unset-all user.name
+    git config --unset-all user.email
+
+    if [ -n "$ORIG_GIT_USER"  ]; then
+        git config --local user.name "$ORIG_GIT_USER"
+    fi
+    if [ -n "$ORIG_GIT_EMAIL" ]; then
+        git config --local user.email "$ORIG_GIT_EMAIL"
     fi
 
-    # Reset user.email to correct value
-    if [[ "$(git config user.email)" != "compscilauren@gmail.com" ]]; then
-        $(git config --unset-all user.email)
-        $(git config user.email "compscilauren@gmail.com")
+    # Don't leave behind an empty [user] section
+    if [ -z "$(git config --local -l | grep ^user)" ]; then
+        git config --local --remove-section user
     fi
 }
 
