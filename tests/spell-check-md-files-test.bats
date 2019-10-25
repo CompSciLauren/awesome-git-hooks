@@ -5,7 +5,7 @@ LOG="./tests/tests.log"
 logTest() {
     # $1 indicates the test status [PASS, FAIL]
     date >> "$LOG"
-    echo "missing apsell error test: $1" >> "$LOG"
+    echo "missing aspell error test: $1" >> "$LOG"
     echo "" >> "$LOG"
     echo "--------------------------------------------" >> "$LOG"
     echo "" >> "$LOG"
