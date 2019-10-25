@@ -43,10 +43,11 @@ Contributions are _always_ welcome! Please see our [Contribution Guidelines](CON
 
 Note: The icon next to each script signifies what language it is written in.
 
-| icon                                                     | language | icon                                                 | language |
-| -------------------------------------------------------- | -------- | ---------------------------------------------------- | -------- |
-| <img width="14" src="bash-icon.png" alt="Bash Icon">     | `bash`   | <img width="14" src="perl-icon.png" alt="Perl Icon"> | `perl`   |
-| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` |                                                      |          |
+| icon                                                     | language |
+| -------------------------------------------------------- | -------- |
+| <img width="14" src="bash-icon.png" alt="Bash Icon">     | `bash`   |
+| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` |
+| <img width="14" src="perl-icon.png" alt="Perl Icon">     | `perl`   |
 
 ### commit-msg
 
