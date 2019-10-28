@@ -22,7 +22,7 @@ teardown() {
 
     # Don't leave behind an empty [user] section
     if [ -z "$(git config --local -l | grep ^user)" ]; then
-        git config --local --remove-section user
+        git config --local --remove-section user 2>/dev/null || true
     fi
 }
 
