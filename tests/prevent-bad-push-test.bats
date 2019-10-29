@@ -25,13 +25,11 @@ logTest() {
     # git push exits with status code 1
     # which is returned by the corresponding hook
     # check pre_push_hooks/prevent_bad_push.hook
-    if [ $? -eq 1 ]; then
+    if [ $status -eq 1 ]; then
         logTest "PASS"
     else
         logTest "FAIL"
     fi
     # Reset the working tree. Move just a commit behind.
     git reset --hard HEAD~1
-    # Reporting success or failure to BATS
-    [ $status -eq 1 ]
 }
