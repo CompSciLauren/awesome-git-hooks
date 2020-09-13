@@ -107,7 +107,7 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [Overcommit](https://github.com/sds/overcommit) - A fully configurable and extendable git hook manager.
 
-- [Git Hooks](https://github.com/icefox/git-hooks) - Manage project, user, and global git hooks more easily.
+- [Git Build Hook Maven Plugin](https://github.com/rudikershaw/git-build-hook) - Install Git hooks and config during a Maven build.
 
 - [CaptainHook](https://github.com/CaptainHookPhp/captainhook) - Git hooks manager for PHP developers.
 
