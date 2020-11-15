@@ -137,6 +137,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
 
+- [Automatically Manage Git Hooks with Direnv](https://knpw.rs/blog/direnv-git-hooks)
+
 ## Video Guides
 
 - [Git Hooks Part 1 - Getting Started](https://www.youtube.com/watch?v=aB3eq52sZSU)
