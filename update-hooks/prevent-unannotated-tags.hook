@@ -8,7 +8,7 @@
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the push.
 #
-# Requirements: 
+# Requirements:
 #   * Bash
 #
 # To enable this hook, rename this file to "update".
@@ -44,7 +44,7 @@ if [ -z "$GIT_DIR" ]; then
 	exit 1
 fi
 
-if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+if [ -z "$refname" ] || [ -z "$oldrev" ] || [ -z "$newrev" ]; then
 	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
 	exit 1
 fi
@@ -71,7 +71,7 @@ zero="0000000000000000000000000000000000000000"
 if [ "$newrev" = "$zero" ]; then
 	newrev_type=delete
 else
-	newrev_type=$(git cat-file -t $newrev)
+	newrev_type=$(git cat-file -t "$newrev")
 fi
 
 case "$refname","$newrev_type" in
@@ -93,7 +93,7 @@ case "$refname","$newrev_type" in
 		;;
 	refs/tags/*,tag)
 		# annotated tag
-		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		if [ "$allowmodifytag" != "true" ] && git rev-parse "$refname" > /dev/null 2>&1
 		then
 			echo "*** Tag '$refname' already exists." >&2
 			echo "*** Modifying a tag is not allowed in this repository." >&2

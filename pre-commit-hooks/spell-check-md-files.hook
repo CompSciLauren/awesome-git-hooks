@@ -5,7 +5,7 @@
 # Used to check files with the .md extension (markdown) for spelling errors.
 # It will run each .md file through aspell and returns an exit code other than 0 when it matches.
 #
-# Requirements: 
+# Requirements:
 #   * Bash
 #
 # To enable this hook, rename this file to "pre-commit".
@@ -23,7 +23,7 @@ for file in $(find $SEARCH_DIR -type f -name "*.md");
         # Pass each .md file through aspell.
         do output=$(cat $file | aspell --lang=en list);
         if [[ $? != 0 ]]; then
-                echo -e "${RED}Error found in output${NC}, cannot continue." 
+                echo -e "${RED}Error found in output${NC}, cannot continue."
                 echo -e "Please check manually for aspell -c $file?"
                 exit 1
         elif [[ $output ]]; then

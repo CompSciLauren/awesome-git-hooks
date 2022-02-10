@@ -14,7 +14,7 @@ from_hash=$1
 to_hash=$2
 checkout_type=$3
 branch_name=$(git rev-parse --abbrev-ref HEAD)
-from_branch_name=$(git name-rev --name-only $from_hash)
+from_branch_name=$(git name-rev --name-only "$from_hash")
 
 light_red='\033[1;31m'
 no_color='\033[0m'
@@ -25,19 +25,19 @@ containsElement () {
     return 1
 }
 
-if [ $checkout_type -ne 1 ]
+if [ "$checkout_type" -ne 1 ]
 then
-    exit 0 ; # Not a branch checkout
+    exit 0 # Not a branch checkout
 fi
 
-if [ $from_hash != $to_hash ]
+if [ "$from_hash" != "$to_hash" ]
 then
-    exit 0 ; # Not checking out a new branch
+    exit 0 # Not checking out a new branch
 fi
 
-if [ $branch_name == $from_branch_name ]
+if [ "$branch_name" = "$from_branch_name" ]
 then
-    exit 0 ; # Not checking out a new branch
+    exit 0 # Not checking out a new branch
 fi
 
 # Create a commit and display a message

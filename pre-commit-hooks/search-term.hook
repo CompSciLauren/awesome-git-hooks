@@ -8,7 +8,7 @@
 # The hook should exit with non-zero status after issuing an appropriate
 # message if it stops the commit.
 #
-# Requirements: 
+# Requirements:
 #   * Bash
 #
 # To enable this hook, rename this file to "pre-commit".
@@ -27,6 +27,6 @@ SEARCH_TERM="FIXME:"
 if [[ $(git diff --cached | grep -E "^\+" | grep -v '+++ b/' | cut -c 2-) == *$SEARCH_TERM* ]]
 then
 	printf "${RED}Error:${NC} Found ${SEARCH_TERM} in attempted commit.\n"
-	printf "Please remove all occurances of ${SEARCH_TERM} before committing.\n"
+	printf '%s\n' "Please remove all occurances of ${SEARCH_TERM} before committing."
 	exit 1
 fi
