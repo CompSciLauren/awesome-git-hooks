@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Prevents you from accidentally committing your `.env` file(s) to code
+#
+# Requirements: 
+#   * Bash
+#   * dotenvx
+#
+# To enable this hook, install dotnevx [https://dotenvx.com/docs/install] and rename this file to "pre-commit".
+
+dotenvx precommit

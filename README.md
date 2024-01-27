@@ -64,6 +64,7 @@ Note: The icon next to each script signifies what language it is written in.
 
 ### pre-commit
 
+- [dotenvx](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/dotenvx.hook) - Prevent committing your `.env` file(s) to code. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [format-code](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/format-code.hook) - Run command to format code and re-add any files modified after formatting. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [search-term](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/search-term.hook) - Fail commit if a specific term is found in the code. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [spell-check-md-files](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/spell-check-md-files.hook) - Check files with .md extension for spelling errors. <img width="14" src="bash-icon.png" alt="Bash Icon">
