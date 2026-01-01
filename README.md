@@ -43,10 +43,11 @@ Contributions are _always_ welcome! Please see our [Contribution Guidelines](CON
 
 Note: The icon next to each script signifies what language it is written in.
 
-| icon                                                     | language | icon                                                 | language |
-| -------------------------------------------------------- | -------- | ---------------------------------------------------- | -------- |
-| <img width="14" src="bash-icon.png" alt="Bash Icon">     | `bash`   | <img width="14" src="perl-icon.png" alt="Perl Icon"> | `perl`   |
-| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` |                                                      |          |
+| icon                                                     | language |
+| -------------------------------------------------------- | -------- |
+| <img width="14" src="bash-icon.png" alt="Bash Icon">     | `bash`   |
+| <img width="14" src="python-icon.png" alt="Python Icon"> | `python` |
+| <img width="14" src="perl-icon.png" alt="Perl Icon">     | `perl`   |
 
 ### commit-msg
 
@@ -63,6 +64,7 @@ Note: The icon next to each script signifies what language it is written in.
 
 ### pre-commit
 
+- [dotenvx](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/dotenvx.hook) - Prevent committing your `.env` file(s) to code. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [format-code](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/format-code.hook) - Run command to format code and re-add any files modified after formatting. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [search-term](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/search-term.hook) - Fail commit if a specific term is found in the code. <img width="14" src="bash-icon.png" alt="Bash Icon">
 - [spell-check-md-files](https://github.com/CompSciLauren/awesome-git-hooks/blob/master/pre-commit-hooks/spell-check-md-files.hook) - Check files with .md extension for spelling errors. <img width="14" src="bash-icon.png" alt="Bash Icon">
@@ -106,7 +108,7 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [Overcommit](https://github.com/sds/overcommit) - A fully configurable and extendable git hook manager.
 
-- [Git Hooks](https://github.com/icefox/git-hooks) - Manage project, user, and global git hooks more easily.
+- [Git Build Hook Maven Plugin](https://github.com/rudikershaw/git-build-hook) - Install Git hooks and config during a Maven build.
 
 - [CaptainHook](https://github.com/CaptainHookPhp/captainhook) - Git hooks manager for PHP developers.
 
@@ -135,6 +137,8 @@ Note: The icon next to each script signifies what language it is written in.
 - [An In-Depth Look at Git Hooks](https://dzone.com/articles/an-in-depth-look-at-git-hooks)
 
 - [Git hooks and practical uses. Yes, even on Windows.](https://www.tygertec.com/git-hooks-practical-uses-windows/)
+
+- [Automatically Manage Git Hooks with Direnv](https://knpw.rs/blog/direnv-git-hooks)
 
 ## Video Guides
 
