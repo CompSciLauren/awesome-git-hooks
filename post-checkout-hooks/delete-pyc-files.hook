@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Based on a hook from dzone.com
 # Source: https://dzone.com/articles/an-in-depth-look-at-git-hooks
 #
 # Deletes all .pyc files every time a new branch is checked out.
 #
 # Requirements: 
-#   * Python 2/3
+#   * Python 3
 #
 # To enable this hook, rename this file to "post-checkout".
 
@@ -17,9 +17,9 @@ previous_head = sys.argv[1]
 new_head = sys.argv[2]
 is_branch_checkout = sys.argv[3]
 if is_branch_checkout == "0":
-  print "post-checkout: This is a file checkout. Nothing to do."
+  print("post-checkout: This is a file checkout. Nothing to do.")
   sys.exit(0)
-print "post-checkout: Deleting all '.pyc' files in working directory"
+print("post-checkout: Deleting all '.pyc' files in working directory")
 for root, dirs, files in os.walk('.'):
   for filename in files:
     ext = os.path.splitext(filename)[1]
