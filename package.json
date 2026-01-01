@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">\r   <a href=\"https://git-scm.com/\">\r   <img width=\"455\" src=\"https://github.com/compscilauren/awesome-git-hooks/blob/master/git-logo.png\" alt=\"Awesome Git Hooks\"></a><br>Awesome Git Hooks\r </h1>",
   "main": "index.js",
   "dependencies": {
-    "awesome-lint": "^0.11.0"
+    "awesome-lint": "^2.2.2"
   },
   "devDependencies": {
     "bats": "^1.1.0",
