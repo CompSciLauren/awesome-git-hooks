@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [gethooky](https://github.com/ezpieco/gethooky) - A language agnostic git hook manager.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
