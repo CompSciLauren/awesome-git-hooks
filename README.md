@@ -104,6 +104,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 ## Tools
 
+- [push-sentinel](https://github.com/Pmaind/pre-push-secrets) - Pre-push hook that scans commits for secrets and API keys before they reach GitHub. Zero dependencies, Node.js only.
+
 - [Husky](https://github.com/typicode/husky) - Manage Git hooks with a nice user interface.
 
 - [Overcommit](https://github.com/sds/overcommit) - A fully configurable and extendable Git hook manager.
