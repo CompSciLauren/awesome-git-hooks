@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [BeLikeNative Git Grammar Hook](https://github.com/theluckystrike/bln-git-grammar-hook) - Pre-commit hook that checks grammar, spelling, and style in commit messages and documentation with 77 local rules.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
