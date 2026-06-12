@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [dos commit-audit](https://github.com/anthony-chaudhary/dos-kernel) - Pre-push gate that blocks a commit whose message claims work its diff doesn't contain.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
