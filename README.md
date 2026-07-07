@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [RepoBoundary](https://github.com/wabybaddouch-arch/repoboundary) - Local CLI guardrail that blocks commits when staged changes touch user-defined protected paths.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
