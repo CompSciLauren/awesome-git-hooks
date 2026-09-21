@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [check-docs](https://github.com/ipaulsmith/check-docs) - Stop commits when agent instruction files reference missing paths.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
