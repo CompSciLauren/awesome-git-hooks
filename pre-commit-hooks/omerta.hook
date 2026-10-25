@@ -1,0 +1,22 @@
+#!/bin/bash
+# Based on a hook from omerta
+# Source: https://github.com/shcherbak-ai/omerta
+#
+# Fails the commit if a value of your .env files, such as an API key, is in the
+# staged changes, as written or encoded in URLs, JSON and base64, or if a .env
+# file is staged itself. It names the file, the line and the variable, never
+# the value.
+#
+# The hook exits with non-zero status after listing what it found, which stops
+# the commit.
+#
+# Requirements:
+#   * Bash
+#   * git 2.31 or later
+#   * uv [https://docs.astral.sh/uv/], which fetches omerta, and Python 3.11+
+#     if none is installed
+#
+# To enable this hook, rename this file to "pre-commit".
+
+# Search the staged changes for the values of .env and .env.* files
+uvx omerta check
