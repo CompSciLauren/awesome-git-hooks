@@ -114,6 +114,8 @@ Note: The icon next to each script signifies what language it is written in.
 
 - [pre-commit](https://github.com/pre-commit/pre-commit) - A framework for managing and maintaining multi-language pre-commit hooks.
 
+- [safeclone](https://github.com/hamarshehmhmd/safeclone) - Finds and quarantines Git hooks and dangerous `.git/config` entries (such as `core.fsmonitor` and filter drivers) shipped inside untrusted repos and zipped take-home assignments, before you run any git command.
+
 ## Written Guides
 
 - [Git hooks documentation at git-scm.com](https://git-scm.com/docs/githooks)
